@@ -1,0 +1,3 @@
+create user jpmorgan identified by jpmorgan default tablespace users quota unlimited on users;
+grant create session, create table, create any sequence to jpmorgan;
+alter session set current_schema = jpmorgan;
